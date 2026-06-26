@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Untuk Hari Hari Lebih Baik</title>
+<title>Rutinitas Olahraga Mingguan Untuk Hari haari yang lebih baik </title>
+<link rel="icon" href="https://i.ibb.co/jP4M2Yd2/image.png">
 
 <style>
 *{
@@ -27,8 +28,20 @@ font-size:38px;
 
 p{
 text-align:center;
-margin-bottom:35px;
+margin-bottom:20px;
 opacity:.8;
+}
+
+button.reset{
+display:block;
+margin:0 auto 25px auto;
+padding:10px 20px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+font-weight:bold;
+background:#ff5252;
+color:white;
 }
 
 .container{
@@ -68,9 +81,7 @@ border-radius:10px;
 .sabtu h2{background:#009688;}
 .minggu h2{background:#F44336;}
 
-ul{
-list-style:none;
-}
+ul{list-style:none;}
 
 li{
 padding:8px 0;
@@ -117,154 +128,158 @@ opacity:.8;
 </head>
 <body>
 
-<h1>🏋 Rutinitas Olahraga Mingguan</h1>
-<p>Checklist latihan setiap hari agar tetap sehat dan konsisten. Men sana in corpore sano brad !</p>
+<h1>🏋 Rutinitas Olahraga Mingguan Untuk Hari haari yang lebih baik</h1>
+<p>Checklist latihan agar tetap konsisten & sehat gaes (Mens sana in corpore sano)</p>
+
+<button class="reset">RESET PROGRESS</button>
 
 <div class="container">
 
+<!-- SENIN -->
 <div class="card senin">
 <h2>Senin</h2>
-
 <ul>
 <li><input type="checkbox"> Pemanasan 10 menit</li>
 <li><input type="checkbox"> Easy Run 6 KM</li>
 <li><input type="checkbox"> Pendinginan</li>
 <li><input type="checkbox"> Beli Buah</li>
 </ul>
-
 <div class="progress"><div class="bar"></div></div>
 <div class="percent">0%</div>
-
 </div>
 
+<!-- SELASA -->
 <div class="card selasa">
 <h2>Selasa</h2>
-
 <ul>
 <li><input type="checkbox"> Pemanasan 10 menit</li>
-<li><input type="checkbox"> Speed interval 400 M x 8 (lari bertahap cepat / pelan )</li>
+<li><input type="checkbox"> Speed interval 400M x 8</li>
 <li><input type="checkbox"> Pendinginan</li>
 <li><input type="checkbox"> Beli Buah</li>
 </ul>
-
 <div class="progress"><div class="bar"></div></div>
 <div class="percent">0%</div>
-
 </div>
 
+<!-- RABU -->
 <div class="card rabu">
 <h2>Rabu</h2>
-
 <ul>
 <li><input type="checkbox"> Pemanasan 10 menit</li>
-<li><input type="checkbox"> Recovery Run - 5 KM (jalan santai)</li>
+<li><input type="checkbox"> Recovery Run 5 KM</li>
 <li><input type="checkbox"> Pendinginan</li>
 <li><input type="checkbox"> Beli Buah</li>
 </ul>
-
 <div class="progress"><div class="bar"></div></div>
 <div class="percent">0%</div>
-
 </div>
 
+<!-- KAMIS -->
 <div class="card kamis">
 <h2>Kamis</h2>
-
 <ul>
 <li><input type="checkbox"> Pemanasan 10 menit</li>
-<li><input type="checkbox"> Tempo Run - 5 KM (lari cukup keras)</li>
+<li><input type="checkbox"> Tempo Run 5 KM</li>
 <li><input type="checkbox"> Pendinginan</li>
 <li><input type="checkbox"> Beli Buah</li>
 </ul>
-
 <div class="progress"><div class="bar"></div></div>
 <div class="percent">0%</div>
-
 </div>
 
+<!-- JUMAT -->
 <div class="card jumat">
 <h2>Jumat</h2>
-
 <ul>
 <li><input type="checkbox"> Pemanasan 10 menit</li>
-<li><input type="checkbox"> Rest/Strength Training (hari tanpa latihan berat)</li>
+<li><input type="checkbox"> Strength Training</li>
 <li><input type="checkbox"> Pendinginan</li>
 <li><input type="checkbox"> Beli Buah</li>
 </ul>
-
 <div class="progress"><div class="bar"></div></div>
 <div class="percent">0%</div>
-
 </div>
 
+<!-- SABTU -->
 <div class="card sabtu">
 <h2>Sabtu</h2>
-
 <ul>
 <li><input type="checkbox"> Pemanasan 10 menit</li>
-<li><input type="checkbox"> Long Run 15 KM (lari lebih jauh, tapi pelan)</li>
+<li><input type="checkbox"> Long Run 15 KM</li>
 <li><input type="checkbox"> Pendinginan</li>
 <li><input type="checkbox"> Beli Buah</li>
 </ul>
-
 <div class="progress"><div class="bar"></div></div>
 <div class="percent">0%</div>
-
 </div>
 
+<!-- MINGGU -->
 <div class="card minggu">
 <h2>Minggu</h2>
-
 <ul>
-<li><input type="checkbox"> KARAOKE (REST TIME) </li>
-
+<li><input type="checkbox"> REST / KARAOKE 😄</li>
+</ul>
 <div class="progress"><div class="bar"></div></div>
 <div class="percent">0%</div>
-
 </div>
 
 </div>
 
 <footer>
-Dibuat untuk membantu menjaga konsistensi olahraga setiap hari 💪 , dan terhindar dari manusia problematik ! 
+Dibuat untuk menjaga konsistensi olahraga 💪 dan Terhindar dari manusia problematik ( TUBUH SEHAT PIKIRAN PASTI SEHAT )
 </footer>
 
 <script>
+document.addEventListener("DOMContentLoaded", () => {
 
-document.querySelectorAll(".card").forEach(card=>{
+const cards = document.querySelectorAll(".card");
 
-const checks=card.querySelectorAll("input");
-
-const bar=card.querySelector(".bar");
-
-const text=card.querySelector(".percent");
-
-checks.forEach(c=>{
-
-c.addEventListener("change",update);
-
+// RESET BUTTON
+document.querySelector(".reset").addEventListener("click", () => {
+localStorage.clear();
+location.reload();
 });
 
-function update(){
+cards.forEach((card, index) => {
 
-let checked=0;
+const checks = card.querySelectorAll("input");
+const bar = card.querySelector(".bar");
+const text = card.querySelector(".percent");
 
-checks.forEach(c=>{
+const key = "week_progress_" + index;
 
+// LOAD
+let saved = JSON.parse(localStorage.getItem(key)) || [];
+
+checks.forEach((c, i) => {
+if(saved[i]) c.checked = true;
+c.addEventListener("change", update);
+});
+
+update();
+
+function update() {
+
+let checked = 0;
+let data = [];
+
+checks.forEach((c, i) => {
+data[i] = c.checked;
 if(c.checked) checked++;
-
 });
 
-let percent=Math.round((checked/checks.length)*100);
+localStorage.setItem(key, JSON.stringify(data));
 
-bar.style.width=percent+"%";
+let percent = checks.length ? Math.round((checked / checks.length) * 100) : 0;
 
-text.innerHTML=percent+"% Selesai";
+bar.style.width = percent + "%";
+text.innerText = percent + "% Selesai";
 
 }
 
 });
 
+});
 </script>
 
 </body>
