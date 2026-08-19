@@ -168,10 +168,51 @@ text-align:center;
 opacity:.8;
 }
 </style>
+}
+</style>
+
+<script>
+  // Memblokir Klik Kanan (Context Menu)
+  document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+  });
+
+  // Memblokir Pintasan Keyboard (Ctrl+U, F12, Ctrl+Shift+I, dll)
+  document.addEventListener('keydown', function(e) {
+    // Blokir F12
+    if (e.keyCode === 123) {
+      e.preventDefault();
+      return false;
+    }
+
+    // Blokir Ctrl+U (View Source)
+    if (e.ctrlKey && (e.keyCode === 85 || e.key === 'u' || e.key === 'U')) {
+      e.preventDefault();
+      return false;
+    }
+
+    // Blokir Ctrl+Shift+I (Inspect Element)
+    if (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.key === 'I' || e.key === 'i')) {
+      e.preventDefault();
+      return false;
+    }
+
+    // Blokir Ctrl+Shift+J (Console)
+    if (e.ctrlKey && e.shiftKey && (e.keyCode === 74 || e.key === 'J' || e.key === 'j')) {
+      e.preventDefault();
+      return false;
+    }
+
+    // Blokir Ctrl+S (Save Page)
+    if (e.ctrlKey && (e.keyCode === 83 || e.key === 's' || e.key === 'S')) {
+      e.preventDefault();
+      return false;
+    }
+  });
+</script>
 
 </head>
 <body>
-
 <h1>🏋 Rutinitas Olahraga Mingguan Untuk Hari hari yang lebih baik</h1>
 <p>Checklist latihan agar tetap konsisten & sehat gaes (Mens sana in corpore sano)</p>
 
