@@ -1,0 +1,315 @@
+<!doctype html>
+<html ⚡ lang="id">
+<head>
+  <meta charset="utf-8">
+  <title>ARUS4D - Portal Gaming Online Resmi & Terpercaya</title>
+  <link rel="canonical" href="https://example.com/landing-page">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  
+  <!-- Script Komponen AMP Mandatory & Lightbox untuk Pop-Up -->
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+  <style amp-custom>
+    /* Styling Dasar & Theme Dark Luxury */
+    :root {
+      --gold-primary: #ffd700;
+      --gold-gradient: linear-gradient(135deg, #ffe066 0%, #d4af37 50%, #996515 100%);
+      --bg-dark: #0b0d10;
+      --card-bg: #15181e;
+      --text-color: #ffffff;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-color);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 480px;
+      padding: 15px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    /* Running Text Header */
+    .ticker-bar {
+      background: #11141a;
+      border: 1px solid #2a2e39;
+      color: var(--gold-primary);
+      padding: 8px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(255, 215, 0, 0.1);
+    }
+
+    /* Logo Header */
+    .logo-box {
+      margin: 15px 0;
+    }
+    .logo-box h1 {
+      margin: 0;
+      font-size: 28px;
+      background: var(--gold-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-transform: uppercase;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+    }
+
+    /* Subtitle Tag */
+    .badge {
+      display: inline-block;
+      background: rgba(212, 175, 55, 0.15);
+      border: 1px solid var(--gold-primary);
+      color: var(--gold-primary);
+      padding: 5px 15px;
+      border-radius: 50px;
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    /* Main Title Description */
+    .main-title {
+      font-size: 16px;
+      font-weight: bold;
+      color: #e0e0e0;
+      margin-bottom: 20px;
+      line-height: 1.4;
+    }
+
+    /* Quick Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+    .stat-card {
+      background: var(--card-bg);
+      border: 1px solid #2a2e39;
+      padding: 10px 5px;
+      border-radius: 8px;
+      font-size: 11px;
+      color: #ccc;
+    }
+    .stat-card strong {
+      display: block;
+      color: var(--gold-primary);
+      margin-top: 4px;
+    }
+
+    /* Banner Image Container */
+    .banner-container {
+      border: 2px solid var(--gold-primary);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(212, 175, 55, 0.25);
+      margin-bottom: 20px;
+    }
+
+    /* Action Buttons */
+    .btn-group {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 25px;
+    }
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 14px 0;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      border-radius: 8px;
+      text-decoration: none;
+      cursor: pointer;
+      box-sizing: border-box;
+      border: none;
+      transition: all 0.3s ease;
+    }
+    .btn-login {
+      background: var(--gold-gradient);
+      color: #000;
+      box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+    }
+    .btn-register {
+      background: transparent;
+      color: var(--gold-primary);
+      border: 2px solid var(--gold-primary);
+    }
+
+    /* Info Box */
+    .info-card {
+      background: var(--card-bg);
+      border-left: 4px solid var(--gold-primary);
+      padding: 12px;
+      text-align: left;
+      border-radius: 0 8px 8px 0;
+      font-size: 13px;
+      color: #aaa;
+    }
+    .info-card h3 {
+      margin: 0 0 5px 0;
+      color: #fff;
+      font-size: 14px;
+    }
+
+    /* MODAL POPUP LIGHTBOX STYLES */
+    .amp-lightbox-modal {
+      background: rgba(0, 0, 0, 0.85);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .popup-box {
+      background: var(--card-bg);
+      border: 2px solid var(--gold-primary);
+      border-radius: 12px;
+      padding: 25px 20px;
+      width: 100%;
+      max-width: 360px;
+      box-shadow: 0 0 25px rgba(212, 175, 55, 0.4);
+      position: relative;
+    }
+    .popup-box h2 {
+      margin-top: 0;
+      color: var(--gold-primary);
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 24px;
+      cursor: pointer;
+    }
+    .form-group {
+      margin-bottom: 15px;
+      text-align: left;
+    }
+    .form-group label {
+      display: block;
+      font-size: 12px;
+      margin-bottom: 5px;
+      color: #ccc;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #333;
+      background: #0b0d10;
+      color: #fff;
+      box-sizing: border-box;
+    }
+    .form-group input:focus {
+      outline: none;
+      border-color: var(--gold-primary);
+    }
+    .btn-submit {
+      width: 100%;
+      padding: 12px;
+      background: var(--gold-gradient);
+      border: none;
+      font-weight: bold;
+      color: #000;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Header Notification Bar -->
+    <div class="ticker-bar">
+      ⚡ ARUS4D: Server Super Cepat & Layanan VIP 24 Jam
+    </div>
+
+    <!-- Main Branding -->
+    <div class="logo-box">
+      <h1>ARUS4D</h1>
+    </div>
+
+    <div class="badge">OFFICIAL GAME PLATFORM</div>
+
+    <div class="main-title">
+      PORTAL GAMING ONLINE DENGAN SERVER TERPERCAYA DAN PILIHAN GAME POPULER 2026
+    </div>
+
+    <!-- Quick Info Cards -->
+    <div class="stats-grid">
+      <div class="stat-card">Sistem Deposit<strong>Instant 24 Jam</strong></div>
+      <div class="stat-card">Winrate Rate<strong>Hingga 98%</strong></div>
+      <div class="stat-card">Server Status<strong>Sangat Stabil</strong></div>
+    </div>
+
+    <!-- Promotional Banner -->
+    <div class="banner-container">
+      <amp-img src="https://via.placeholder.com/600x600/15181e/ffd700?text=ARUS4D+PROMO+BANNER" 
+               width="600" 
+               height="600" 
+               layout="responsive" 
+               alt="ARUS4D Banner">
+      </amp-img>
+    </div>
+
+    <!-- CTA Button Group -->
+    <div class="btn-group">
+      <!-- Tombol ini mentrigger Pop-Up Lightbox Login -->
+      <button class="btn btn-login" on="tap:login-lightbox">
+        LOGIN DISINI 
+      </button>
+
+      <!-- Link Daftar Eksternal -->
+      <a href="https://example.com/register" class="btn btn-register" target="_blank" rel="noopener">
+        BUAT AKUN BARU
+      </a>
+    </div>
+
+    <!-- Footer Information -->
+    <div class="info-card">
+      <h3>ARUS4D OFFICIAL</h3>
+      <p>Platform hiburan game online terintegrasi dengan berbagai pilihan game terbaik, sistem keamanan terenkripsi, dan promo melimpah setiap harinya.</p>
+    </div>
+  </div>
+
+  <!-- AMP POPUP LIGHTBOX UNTUK LOGIN -->
+  <amp-lightbox id="login-lightbox" layout="nodisplay" class="amp-lightbox-modal">
+    <div class="popup-box">
+      <button class="close-btn" on="tap:login-lightbox.close">&times;</button>
+      <h2>LOGIN AKUN</h2>
+      <form method="post" action-xhr="https://example.com/api/login" target="_top">
+        <div class="form-group">
+          <label for="username">Username / Email</label>
+          <input type="text" id="username" name="username" placeholder="Masukkan username" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Masukkan password" required>
+        </div>
+        <button type="submit" class="btn-submit">MASUK SEKARANG</button>
+      </form>
+    </div>
+  </amp-lightbox>
+
+</body>
+</html>
