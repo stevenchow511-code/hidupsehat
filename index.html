@@ -22,7 +22,8 @@
 <meta name="robots" content="index,follow">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Checklist rutinitas olahraga mingguan lengkap untuk membantu menjaga konsistensi latihan, meningkatkan kebugaran, dan menjalani gaya hidup sehat."><meta property="og:type" content="website">
+<meta name="description" content="Checklist rutinitas olahraga mingguan lengkap untuk membantu menjaga konsistensi latihan, meningkatkan kebugaran, dan menjalani gaya hidup sehat.">
+<meta property="og:type" content="website">
 <meta property="og:title" content="Rutinitas Olahraga Mingguan">
 <meta property="og:description" content="Checklist latihan mingguan agar tetap konsisten dan sehat.">
 <meta property="og:image" content="https://stevenchow.mom/cover.jpg">
@@ -168,7 +169,6 @@ text-align:center;
 opacity:.8;
 }
 </style>
-</style>
 
 <script>
   // Memblokir Klik Kanan (Context Menu)
@@ -178,31 +178,22 @@ opacity:.8;
 
   // Memblokir Pintasan Keyboard (Ctrl+U, F12, Ctrl+Shift+I, dll)
   document.addEventListener('keydown', function(e) {
-    // Blokir F12
     if (e.keyCode === 123) {
       e.preventDefault();
       return false;
     }
-
-    // Blokir Ctrl+U (View Source)
     if (e.ctrlKey && (e.keyCode === 85 || e.key === 'u' || e.key === 'U')) {
       e.preventDefault();
       return false;
     }
-
-    // Blokir Ctrl+Shift+I (Inspect Element)
     if (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.key === 'I' || e.key === 'i')) {
       e.preventDefault();
       return false;
     }
-
-    // Blokir Ctrl+Shift+J (Console)
     if (e.ctrlKey && e.shiftKey && (e.keyCode === 74 || e.key === 'J' || e.key === 'j')) {
       e.preventDefault();
       return false;
     }
-
-    // Blokir Ctrl+S (Save Page)
     if (e.ctrlKey && (e.keyCode === 83 || e.key === 's' || e.key === 'S')) {
       e.preventDefault();
       return false;
@@ -212,15 +203,7 @@ opacity:.8;
 
 </head>
 <body>
-<!-- Pop-up Banner Event -->
-<div id="eventPopup" style="display:flex; position:fixed; z-index:9999; left:0; top:0; width:100%; height:100%; background-color:rgba(0,0,0,0.7); align-items:center; justify-content:center;">
-  <div style="background-color:#fff; padding:20px; border-radius:10px; max-width:400px; width:90%; text-align:center; position:relative; box-shadow:0 4px 8px rgba(0,0,0,0.2);">
-    <span onclick="document.getElementById('eventPopup').style.display='none'" style="position:absolute; top:8px; right:15px; font-size:24px; font-weight:bold; cursor:pointer; color:#333;">&times;</span>
-    <h3 style="margin-top:0; color:#333;">🎉 EVENT SPESIAL!</h3>
-    <p style="color:#666;">Jangan lewatkan event terbaru kami dengan berbagai bonus & penawaran menarik!</p>
-    <a href="infowadah.com" style="display:inline-block; padding:10px 20px; background-color:#ff0000; color:#fff; text-decoration:none; border-radius:5px; font-weight:bold; margin-top:10px;">IKUTI EVENT SEKARANG</a>
-  </div>
-</div>
+
 <h1>🏋 Rutinitas Olahraga Mingguan Untuk Hari hari yang lebih baik</h1>
 <p>Checklist latihan agar tetap konsisten & sehat gaes (Mens sana in corpore sano)</p>
 
@@ -374,6 +357,24 @@ text.innerText = percent + "% Selesai";
 
 });
 </script>
+
+<!-- Tombol Melayang Menggunakan Gambar Canva + Efek Animasi Bergerak -->
+<a href="https://infowadah.com" target="_blank" style="position: fixed; bottom: 15px; right: 15px; z-index: 9999; display: inline-block; text-decoration: none; animation: tombolBergerak 1.2s infinite alternate ease-in-out;">
+  <img src="https://i.ibb.co/GQRVFV78/image.png" alt="Lomba Turnover" style="width: 120px; height: auto; display: block; filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.6));">
+</a>
+
+<style>
+@keyframes tombolBergerak {
+  0% {
+    transform: scale(1) translateY(0);
+    filter: drop-shadow(0 2px 5px rgba(255, 215, 0, 0.4));
+  }
+  100% {
+    transform: scale(1.1) translateY(-4px); /* Membesar & terangkat sedikit */
+    filter: drop-shadow(0 6px 15px rgba(255, 0, 0, 0.8)); /* Efek kilau merah-emas */
+  }
+}
+</style>
 
 </body>
 </html>
